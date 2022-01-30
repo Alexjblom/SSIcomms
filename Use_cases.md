@@ -40,3 +40,5 @@
 4. Customer receives message: “Please make payment to for the following amount”
 5. Call center receives proof of payment
 6. Call starts.
+
+![SSIComms_diagram drawio](https://user-images.githubusercontent.com/10700104/151701428-7cd0003b-c172-4c51-84dc-01a9ac67d087.svg)
