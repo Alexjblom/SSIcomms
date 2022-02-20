@@ -11,7 +11,7 @@ Together, they constitute an application that satisfies use cases such as:
 
 In order to build a working application, SSIComms uses SYLK Suite, a business layer built for this project and AnimoMobile SDK. In terms of interoperability, every layer can be replaced by third party solutions. The diagram below illustrates how all of this fits together.
 
-![SSIComms_structure.drawio.svg](/uploads/de75b0bca27babf10648af3bb8ba5104/SSIComms_structure.drawio.svg)
+![SSIComms_structure drawio](https://user-images.githubusercontent.com/50589812/154837502-f2c42a0d-8992-4358-ab7a-457fd0df0562.svg)
 
 
 # 2. Communications layer
