@@ -61,7 +61,7 @@ The special needs of SSIComms where it regards the wallet layer are outlined in 
 All of our use cases have in common that an ongoing peer2peer internet communications session using the SIP protocol needs to set up a DIDComm session between the same participants. 
 The following diagram shows how we expect to make this happen for our first use case, *“Identification before and during an internet communications session”*. Please note that DIDComm by itself, where a session is usually initiated by reading a QR-code, does not fit the circumstances.
 
-![SSIComms_diagram.drawio.svg](/uploads/8c327f43a1c263c9c2f5eefb1e906a0a/SSIComms_diagram.drawio.svg)
+![SSIComms_diagram drawio](https://user-images.githubusercontent.com/50589812/154837662-50c0b71e-d35b-4554-ad27-2271e2978e95.svg)
 
 In our second use case, *“Verify the verifier”*, a holder and a verifier temporarily assume each others role by engaging in a mutual exchange of credentials. This double exchange can of course be achieved by using existing DIDComm messages, but that has its drawbacks: not only does the holder have to respond to multiple on screen messages, which does not make for a great user experience, it also misses the opportunity to offload the decision making to the machine layer. Involving more human decision making creates additional risk of the agreed exchange going wrong.
 
