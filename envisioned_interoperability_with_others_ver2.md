@@ -21,19 +21,19 @@ There are currently no internet communications projects within eSSIF-Lab, and we
 ##### 3.1 The SSI Mandate service from Visma
 Mandates are particularly relevant in the case of internet communications, where often requests for informaton are exchanged between entities in the medical and insurance ecosystem and clients and their mandatees. We are exploring the use of Visma's SSI Mandate service in cooperation with Visma. 
 
-###### Implementation
+###### 3.1.1.Implementation
 Currently, we have foreseen a very basic process to load the app with credentials. Working with Visma, we will look at expanding this process to accomodate their solution.
 
-##### 3.2 Trinsic Trust registry. 
+##### 3.2. Trinsic Trust registry. 
 Through this component, holders can avoid coercion by verifying the verifier; verifiers can discern offline which issuers they trust; issuers can communicate to holders which governance framework they are associated with. This is relevant to our use cases 1 and 2 and our use runs parallel to Animo's implementation effort.
 
-###### Implementation
+###### 3.2.1. Implementation
 We will look at expanding our API for this.
 
-##### 3.3 Igrantio: data-agreement. 
+##### 3.3. Igrantio: data-agreement. 
 On our wishlist since the verify the verifier protocol creates a special set of circumstances where a specialized data agreement is suggested by the use case. Together with Igrantio, we therefore want to investigate whether the two parties agreeing to a mutual exchange of credentials offers room for legal/machine readable formalization.
 
-###### Implementation
+###### 3.3.1. Implementation
 We will look at expanding our API for this.
 
  
