@@ -8,7 +8,7 @@ The application SSIComms consists of a business module, which makes use of an in
 
 As its SIP mdule, SSIComms uses SYLK Suite and as its SSI module AnimoMobile SDK, a javascript Aries mobile agent. The business module was built on purpose for this project The diagram below illustrates how all of this fits together.
 
-diagram tba
+![SSIComms_structure_diagram_ver2](https://user-images.githubusercontent.com/50589812/156152040-dea0e556-24a7-46b6-b836-3aa3f3156a0f.svg)
  
 ## 2. Business module
 This module contains
@@ -53,7 +53,9 @@ The special needs of SSIComms where it regards the SSI module are outlined in th
 
 All of our use cases have in common that an ongoing peer2peer internet communications session using the SIP protocol needs to set up a DIDComm session between the same participants. The following diagram shows how we expect to make this happen for our first use case, “Identification before and during an internet communications session”. Please note that DIDComm by itself, where a session is usually initiated by reading a QR-code, does not fit the circumstances.
   
-diagram tba  
+![SSI_SIP_flowdiagram_no_redirect drawio](https://user-images.githubusercontent.com/50589812/156152246-c9c8711d-f0f5-4ffc-9975-cb2ce517d6f9.svg)
+
+For the sake of simplicity, the proxy servers almost always present in real life situations are not shown here.
 
 In our second use case, “Verify the verifier”, Alice and Bob take the role of holder and verifier respectively, and then the role of verifier and holder. The exchange of VC’s twice can of course be achieved by using existing DIDComm messages, but that has its drawbacks: not only does the holder have to respond to multiple on screen messages, which does not make for a great user experience, it also misses the opportunity to offload the decision making to the machine layer. Involving more human decision making creates additional risk of the agreed exchange going wrong.
 
