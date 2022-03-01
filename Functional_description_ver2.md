@@ -67,7 +67,14 @@ The third use case “Exchange of payment tokens during sessions” concerns the
 This use case falls under the category of nice to have, since in spite of its practical relevance, it is only indirectly connected to to the subject of this project.
 
 
-# 6. Cryptographic primitives
+# 6. Security
 
-Cryptographic primitives
+### 6.1. SIP
+#### 6.1.1. SIP messages
+#### 6.1.2. SIP text messages
+#### 6.1.3. RTP stream
+
+### 6.2. DIDComm
+#### 6.2.1. Out-of-band messages
+#### 6.2.2. DIDComm messages
 
