@@ -10,7 +10,7 @@ SSIComms has chosen eSSIF-LAB participant AnimoMobileSDK to cooperate with right
 In general, there are a number of ways to make use of the SSIComms libraries:
 
 ##### 2.1 Substitute the wallet 
-This means leaving the SIP module and the business module intact, and integrating a different react native wallet which leaves the transport of its out-of-band message to the business layer.
+This means leaving the SIP module and the business module intact, and integrating a different react native wallet which leaves the transport of its out-of-band message to the business module.
 Candidates to explore are Evernym and Trinsic.
 
 ##### 2.2 Substitute our SYLK Suite based SSIComms communications client and server with a different solution.
