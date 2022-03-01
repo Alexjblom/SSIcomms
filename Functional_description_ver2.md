@@ -71,8 +71,11 @@ This use case falls under the category of nice to have, since in spite of its pr
 
 ### 6.1. SIP
 #### 6.1.1. SIP messages
+Concerns about the security of calls via the public Internet have been addressed by encryption of the SIP protocol for secure transmission. The URI scheme SIPS is used to mandate that SIP communication be secured with Transport Layer Security (TLS). SIPS URIs take the form sips:user@example.com.
+End-to-end encryption of SIP is only possible if there is a direct connection between communication endpoints. While a direct connection can be made via Peer-to-peer SIP or via a VPN between the endpoints, most SIP communication involves multiple hops, with the first hop being from a user agent to the user agent's ITSP. For the multiple-hop case, SIPS will only secure the first hop; the remaining hops will normally not be secured with TLS and the SIP communication will be insecure. In contrast, the HTTPS protocol provides end-to-end security as it is done with a direct connection and does not involve the notion of hops.
 #### 6.1.2. SIP text messages
 #### 6.1.3. RTP stream
+The media streams (audio and video), which are separate connections from the SIPS signaling stream, may be encrypted using SRTP. The key exchange for SRTP is performed with SDES (RFC 4568), or with ZRTP (RFC 6189). When SDES is used, the keys will be transmitted via insecure SIP unless SIPS is used. One may also add a MIKEY (RFC 3830) exchange to SIP to determine session keys for use with SRTP.
 
 ### 6.2. DIDComm
 #### 6.2.1. Out-of-band messages
