@@ -24,12 +24,11 @@ The Session Initiation Protocol (SIP) is a signaling protocol used for initiatin
 
 
 ### 2.3. DIDComm & SIP within SSIComms
-An SSIComms session between Alice and Bob involves 3 major steps:
+An SSIComms session between Alice and Bob involves 4 major steps:
 1. First, Alice and Bob start a SIP session, for instance by Aice calling Bob using the SIP protocol.
 2. Then, after Bob answers, he and Alice establish a DID-based relationship by Alice sending an out-of band-message. As a means of transport, Alice chooses the active SIP session between her and Bob, and sends Bob the message as an encrypted SIP message. 
-3. With the DIDComm relationship active, they can now use DIDComm to exchange credentials.
-
-The credentials proven to be satisfactory, Bob and Alice continue their SIP session and exchange voice, video or text messages.
+3. With the DIDComm relationship active, they can now use DIDComm to exchange credentials. 
+4. The credentials proven to be satisfactory, Bob and Alice continue their SIP session and exchange voice, video or text messages.
 
 
 ## 3. The SSIComms project
