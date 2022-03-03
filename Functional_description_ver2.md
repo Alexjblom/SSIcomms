@@ -81,7 +81,7 @@ The media streams (audio and video), which are separate connections from the SIP
 
 ### 6.2. DIDComm
 #### 6.2.1. Out-of-band messages
-Out-of-band messages are traditionally not encrypted, because DIDComm does not do so. However, in this case they are, because they are carried as SIP text mesages.
+Out-of-band messages are traditionally not encrypted, because DIDComm does not do so. However, in this case they are, because they are carried as SIP text mesages. See above to find out how SIP messages are encrypted.
 
 #### 6.2.2. DIDComm messages
 In DIDComm v1, the security is loosely based on standard JSON Web encryption. DIDComm v2 uses full JOSE standards (JWM, EDHC-1PU, etc) 
