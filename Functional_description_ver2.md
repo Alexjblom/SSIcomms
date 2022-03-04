@@ -72,7 +72,7 @@ Alice and Bob take the role of holder and verifier respectively, and then the ro
 
 ### Use Case 3: Exchange of payment tokens during sessions
 
-The third use case oncerns the decentralized equivalent of premium rate numbers. Benefitting from their embedded digital wallets, users can identify and pay each other directly using a payment token. 
+The third use case oncerns the decentralized equivalent of premium rate numbers. Benefitting from their embedded digital wallets, Alice and Bob can identify and pay each other directly using a payment token. 
 This use case falls under the category of nice to have, since in spite of its practical relevance, it is only indirectly connected to to the subject of this project.
 
 
