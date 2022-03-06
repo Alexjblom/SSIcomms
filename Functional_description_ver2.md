@@ -81,8 +81,6 @@ This use case falls under the category of nice to have, since in spite of its pr
 
 # 6. Security
 
-From my notes: eventually we are to mention the cryptographic primitives that are being used, together with an explanation of why these were chosen. At this stage however, they will accept just some high level reference. The text below is copied from wikipedia, if we can do better that would be great.
-
 ### 6.1. SIP
 #### 6.1.1. SIP messages
 Concerns about the security of calls via the public Internet have been addressed by encryption of the SIP protocol for secure transmission. The URI scheme SIPS is used to mandate that SIP communication be secured with Transport Layer Security (TLS). SIPS URIs take the form sips:user@example.com.
