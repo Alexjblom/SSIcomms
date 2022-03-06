@@ -62,11 +62,13 @@ The following diagram shows how we expect to make this happen for our first use 
 #### 5.1.1. Future work: Use Case 1
 In case of Bob not receiving the first invite on an SSI capable SIP client, he uses a 301 mesage to deflect the invite to another client, which does have this capability:
 
-![SSI_SIP complex diagram drawio(1)](https://user-images.githubusercontent.com/50589812/156163945-dde7a96e-e15c-4cdf-b67e-10f6352a3133.svg)
+![SSI_SIP_flowdiagram_no_redirect drawio(2)](https://user-images.githubusercontent.com/50589812/156942818-caa14679-b1c8-44fe-91c4-2dc3a136ffaa.svg)
 
 For the sake of simplicity, in both cases the proxy servers almost always present in real life situations are not shown here.
 
 ### 5.2. Use Case 2: Verify the verifier
+
+![SSI_SIP_VTV_flowdiagram drawio(1)](https://user-images.githubusercontent.com/50589812/156942760-a1ba17fb-5170-4f7a-982b-e039a5e232ee.svg)
 
 Alice and Bob take the role of holder and verifier respectively, and then the role of verifier and holder. The exchange of VC’s twice can of course be achieved by using existing DIDComm messages, but that has its drawbacks: not only does the holder have to respond to multiple on screen messages, which does not make for a great user experience, it also misses the opportunity to offload the decision making to the machine layer. Involving more human decision making creates additional risk of the agreed exchange going wrong.
 
