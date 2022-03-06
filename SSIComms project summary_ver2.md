@@ -16,7 +16,7 @@ DIDComm is the messaging protocol that provides utility for DID-based relationsh
 One such application  protocol is the “Present proof protocol”, a way to exchange credentials.
 
 #### 2.1.1. The out-of-band message
-Establishing a DID-based connection starts by Alice sending an out-of-band message to Bob. Besides key material and an identifier, the message contains the endpoint where Alice wishes to receive Bob’s DIDComm messages. Alice is free to use any means of communications to send her out-of-band message.
+Establishing a DIDComm connection starts by Alice sending an out-of-band message to Bob. Besides key material and an identifier, the message contains the endpoint where Alice wishes to receive Bob’s DIDComm messages. Alice is free to use any means of communications to send her out-of-band message.
 
 
 ### 2.2. SIP
@@ -25,7 +25,7 @@ The Session Initiation Protocol (SIP) is a signaling protocol used for initiatin
 
 ### 2.3. DIDComm & SIP within SSIComms
 An SSIComms session between Alice and Bob involves 4 major steps:
-1. First, Alice and Bob start a SIP session, for instance by Aice calling Bob using the SIP protocol.
+1. First, Alice and Bob start a SIP session, for instance by Alice calling Bob using the SIP protocol.
 2. Then, after Bob answers, he and Alice establish a DIDComm connection by Alice sending an out-of band-message. As a means of transport, Alice chooses the active SIP session between her and Bob, and sends Bob the message as an encrypted SIP message. 
 3. With the DIDComm connection in place, they can now use DIDComm to exchange credentials. 
 4. The credentials proven to be satisfactory, Bob and Alice continue their SIP session and exchange voice, video or text messages.
