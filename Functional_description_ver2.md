@@ -59,7 +59,7 @@ The following diagram shows how we expect to make this happen for our first use 
   
 ![SSI_SIP_flowdiagram_no_redirect drawio](https://user-images.githubusercontent.com/50589812/156152246-c9c8711d-f0f5-4ffc-9975-cb2ce517d6f9.svg)
 
-#### 5.1.1. Use Case 1 - future work
+#### 5.1.1. Future work: Use Case 1
 In case of Bob not receiving the first invite on an SSI capable SIP client, he uses a 301 mesage to deflect the invite to another client, which does have this capability:
 
 ![SSI_SIP complex diagram drawio(1)](https://user-images.githubusercontent.com/50589812/156163945-dde7a96e-e15c-4cdf-b67e-10f6352a3133.svg)
@@ -86,7 +86,7 @@ From my notes: eventually we are to mention the cryptographic primitives that ar
 Concerns about the security of calls via the public Internet have been addressed by encryption of the SIP protocol for secure transmission. The URI scheme SIPS is used to mandate that SIP communication be secured with Transport Layer Security (TLS). SIPS URIs take the form sips:user@example.com.
 End-to-end encryption of SIP is only possible if there is a direct connection between communication endpoints. While a direct connection can be made via Peer-to-peer SIP or via a VPN between the endpoints, most SIP communication involves multiple hops, with the first hop being from a user agent to the user agent's ITSP. For the multiple-hop case, SIPS will only secure the first hop; the remaining hops will normally not be secured with TLS and the SIP communication will be insecure. In contrast, the HTTPS protocol provides end-to-end security as it is done with a direct connection and does not involve the notion of hops.
 #### 6.1.2. SIP text messages
-SIP text messages are encrypted using PGP.
+SIP text messages are encrypted using OpenPGP standards.
 
 #### 6.1.3. RTP stream
 The media streams (audio and video), which are separate connections from the SIPS signaling stream, may be encrypted using SRTP. The key exchange for SRTP is performed with SDES (RFC 4568), or with ZRTP (RFC 6189). When SDES is used, the keys will be transmitted via insecure SIP unless SIPS is used. One may also add a MIKEY (RFC 3830) exchange to SIP to determine session keys for use with SRTP.
