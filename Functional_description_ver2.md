@@ -72,8 +72,7 @@ In case of Bob not receiving the first invite on an SSI capable SIP client, he u
 In this scenario, better known as _verify the verifier_, Alice and Bob take the role of holder and verifier respectively, and then the role of verifier and holder. The exchange of VC’s twice can of course be achieved by using existing DIDComm messages, but that has its drawbacks: not only does the holder have to respond to multiple on screen messages, which does not make for a great user experience, it also misses the opportunity to offload the decision making to the machine layer. Involving more human decision making creates additional risk of the agreed exchange going wrong.
 
 
-### 5.3. Use Case 3: Exchange of payment tokens during sessions
-
+### 5.3. Use Case 3: Alice calls Bob, but calling Bob is not free.
 The third use case concerns the decentralized equivalent of premium rate numbers. Benefitting from their embedded digital wallets, Alice and Bob can identify and pay each other directly using a payment token. 
 This use case falls under the category of nice to have, since in spite of its practical relevance, it is only indirectly connected to the subject of this project.
 
