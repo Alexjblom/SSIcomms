@@ -52,7 +52,9 @@ The special needs of SSIComms where it regards the SSI module are outlined in th
 # 5. Use cases
 
 All of our use cases have in common that an ongoing peer2peer internet communications session using the SIP protocol needs to set up a DIDComm connection between the same participants, Alice and Bob. 
-Alice and Bob are both behind a firewall and other than an internet communications session have no way of exchanging information in realtime.
+
+Alice and Bob are both behind a firewall and other than an internet communications session, have no way of exchanging messages in realtime. 
+
 For the sake of simplicity, in all cases the proxy servers almost always present in real life situations are not shown here.
 
 ### 5.1. Use Case 1:  Alice calls Bob and Bob wonders whether she really is Alice.
