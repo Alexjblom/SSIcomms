@@ -63,7 +63,7 @@ Alice and Bob are both behind a firewall and other than an internet communicatio
 
 For the sake of simplicity, in all cases the proxy servers almost always present in real life situations are not shown here.
 
-### 5.1. Use Case 1:  Alice calls Bob and Bob wonders whether she really is Alice.
+### 5.1. Use Case 1:  Alice calls Bob and Bob wonders whether she is really Alice.
 
 The following diagram shows how we expect to make _identification during an internet communications session_ happen for Alice and Bob. Please note that DIDComm by itself, where a session is usually initiated by reading a QR-code, does not fit the circumstances. 
 
@@ -75,7 +75,7 @@ In case of Bob not receiving the first invite on an SSI capable SIP client, he u
 ![SSI_SIP complex diagram drawio(2)](https://user-images.githubusercontent.com/50589812/157230190-de11afc5-746a-4ff8-9fce-76242d25b668.svg)
 
 
-### 5.2. Use Case 2: Alice calls Bob, Bob wonders whether she really is Alice, and Alice wonders whether Bob is really Bob
+### 5.2. Use Case 2: Alice calls Bob, Bob wonders whether Alice is Alice, and Alice wonders whether Bob is Bob
 
 ![SSI_SIP_VTV_flowdiagram drawio(1)](https://user-images.githubusercontent.com/50589812/156942760-a1ba17fb-5170-4f7a-982b-e039a5e232ee.svg)
 
