@@ -53,7 +53,7 @@ The special needs of SSIComms where it regards the SSI module are outlined in th
 
 All of our use cases have in common that an ongoing peer2peer internet communications session using the SIP protocol needs to set up a DIDComm connection between the same participants, Alice and Bob. In short, Alice calls Bob and Bob wonders whether she really is Alice.
 
-### 5.1. Use Case 1: Identification before and during an internet communications session - Alice calls Bob and Bob wonders whether she really is Alice.
+### 5.1. Use Case 1: Identification during an internet communications session - Alice calls Bob and Bob wonders whether she really is Alice.
 
 The following diagram shows how we expect to make this happen for our first use case. Please note that DIDComm by itself, where a session is usually initiated by reading a QR-code, does not fit the circumstances.
   
