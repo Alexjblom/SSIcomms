@@ -57,12 +57,11 @@ All of our use cases have in common that an ongoing peer2peer internet communica
 
 The following diagram shows how we expect to make this happen for our first use case. Please note that DIDComm by itself, where a session is usually initiated by reading a QR-code, does not fit the circumstances.
   
-![SSI_SIP_flowdiagram_no_redirect drawio](https://user-images.githubusercontent.com/50589812/156152246-c9c8711d-f0f5-4ffc-9975-cb2ce517d6f9.svg)
-
+![SSI_SIP_flowdiagram_no_redirect drawio(2)](https://user-images.githubusercontent.com/50589812/156942818-caa14679-b1c8-44fe-91c4-2dc3a136ffaa.svg)
 #### 5.1.1. Future work: Use Case 1
 In case of Bob not receiving the first invite on an SSI capable SIP client, he uses a 301 mesage to deflect the invite to another client, which does have this capability:
 
-![SSI_SIP_flowdiagram_no_redirect drawio(2)](https://user-images.githubusercontent.com/50589812/156942818-caa14679-b1c8-44fe-91c4-2dc3a136ffaa.svg)
+![SSI_SIP_VTV_flowdiagram drawio(2)](https://user-images.githubusercontent.com/50589812/157226993-f8d7a171-6843-49cd-baf9-4800f0211ed4.svg)
 
 For the sake of simplicity, in both cases the proxy servers almost always present in real life situations are not shown here.
 
