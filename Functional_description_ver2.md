@@ -51,7 +51,7 @@ The special needs of SSIComms where it regards the SSI module are outlined in th
 
 # 5. Use cases
 
-All of our use cases have in common that an ongoing peer2peer internet communications session using the SIP protocol needs to set up a DIDComm connection between the same participants, Alice and Bob. Alice and Bob are both real persons and for the sake of simplicity, in all cases the proxy servers almost always present in real life situations are not shown here.
+All of our use cases have in common that an ongoing peer2peer internet communications session using the SIP protocol needs to set up a DIDComm connection between the same participants, Alice and Bob. For the sake of simplicity, in all cases the proxy servers almost always present in real life situations are not shown here.
 
 ### 5.1. Use Case 1:  Alice calls Bob and Bob wonders whether she really is Alice.
 
@@ -65,11 +65,11 @@ In case of Bob not receiving the first invite on an SSI capable SIP client, he u
 ![SSI_SIP complex diagram drawio(2)](https://user-images.githubusercontent.com/50589812/157230190-de11afc5-746a-4ff8-9fce-76242d25b668.svg)
 
 
-### 5.2. Use Case 2: Verify the verifier
+### 5.2. Use Case 2: Alice calls Bob, Bob wonders whether she really is Alice, and Alice wonders whether Bob is really Bob
 
 ![SSI_SIP_VTV_flowdiagram drawio(1)](https://user-images.githubusercontent.com/50589812/156942760-a1ba17fb-5170-4f7a-982b-e039a5e232ee.svg)
 
-Here, Alice calls Bob, Bob wonders whether she really is Alice, and Alice wonders whether Bob is really Bob. Alice and Bob therefore take the role of holder and verifier respectively, and then the role of verifier and holder. The exchange of VC’s twice can of course be achieved by using existing DIDComm messages, but that has its drawbacks: not only does the holder have to respond to multiple on screen messages, which does not make for a great user experience, it also misses the opportunity to offload the decision making to the machine layer. Involving more human decision making creates additional risk of the agreed exchange going wrong.
+In this scenario, better known as _verify the verifier_, Alice and Bob take the role of holder and verifier respectively, and then the role of verifier and holder. The exchange of VC’s twice can of course be achieved by using existing DIDComm messages, but that has its drawbacks: not only does the holder have to respond to multiple on screen messages, which does not make for a great user experience, it also misses the opportunity to offload the decision making to the machine layer. Involving more human decision making creates additional risk of the agreed exchange going wrong.
 
 
 ### 5.3. Use Case 3: Exchange of payment tokens during sessions
