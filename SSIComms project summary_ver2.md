@@ -3,7 +3,9 @@
 One of the things people enjoy the most about the internet, is that it enables them to talk to others remotely almost without limit.
 Unfortunately, remotely often means that parties are not sure who they are communicating with. Think of the epidemic of robocalls and prank calls the telecoms industry has been battling for years, or you yourself simply trying to videoconference with your bank: the absence of an identity layer can be a huge problem.
 
-Adding SSI to internet communications resulting in seamless identified communications is the solution to this problem. It enables people engaging in any form of internet communication to exchange presentation requests and proofs, and communicate at the same time.
+Adding SSI to internet communications (SSIComms for short) resulting in seamless identified communications is the solution to this problem. It enables people engaging in any form of internet communication to exchange presentation requests and proofs, and communicate at the same time.
+
+From now on, when Alice calls Bob, Bob will be sure that it is really Alice he is talking to.
 
 
 # 2. Protocol use by SSIComms
@@ -26,7 +28,7 @@ The Session Initiation Protocol (SIP) is a signaling protocol used for initiatin
 ### 2.3. DIDComm & SIP within SSIComms
 An SSIComms session between Alice and Bob involves 4 major steps:
 1. First, Alice and Bob start a SIP session, for instance by Alice calling Bob using the SIP protocol.
-2. Then, after Bob answers, he and Alice establish a DIDComm connection by Alice sending an out-of band-message. As a means of transport, Alice chooses the active SIP session between her and Bob, and sends Bob the message as an encrypted SIP message. 
+2. Then, after Bob answers, he and Alice establish a DIDComm connection by Bob sending Alice an out-of band-message. As a means of transport, Bob chooses the active SIP session between him and Alice, and sends Alice the message as an encrypted SIP message. 
 3. With the DIDComm connection in place, they can now use DIDComm to exchange credentials. 
 4. The credentials proven to be satisfactory, Bob and Alice continue their SIP session and exchange voice, video or text messages.
 
