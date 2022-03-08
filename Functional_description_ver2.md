@@ -59,7 +59,7 @@ The following diagram shows how we expect to make _identification during an inte
 
   
 ![SSI_SIP_flowdiagram_no_redirect drawio(2)](https://user-images.githubusercontent.com/50589812/156942818-caa14679-b1c8-44fe-91c4-2dc3a136ffaa.svg)
-#### 5.1.1. Future work: Use Case 1 with a redirect
+#### 5.1.1. Future work: Alice calls Bob, but Bob answers using the wrong app
 In case of Bob not receiving the first invite on an SSI capable SIP client, he uses a 301 mesage to deflect the invite to another client, which does have this capability:
 
 ![SSI_SIP complex diagram drawio(2)](https://user-images.githubusercontent.com/50589812/157230190-de11afc5-746a-4ff8-9fce-76242d25b668.svg)
