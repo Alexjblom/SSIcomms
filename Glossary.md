@@ -1,5 +1,5 @@
 ### Glossary of terms
 
-- session
-- connection
-- SSIComms
+- `session`
+- `connection`
+- `SSIComms`
