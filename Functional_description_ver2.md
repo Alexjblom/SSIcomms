@@ -51,6 +51,12 @@ The special needs of SSIComms where it regards the SSI module are outlined in th
 
 # 5. Use cases
 
+The setting of all of our use cases is the following:
+Participants are Alice and Bob
+Alice wants to call Bob by initiating an internet communications session.
+Alice and Bob are both behind a firewall and other than an internet communications session, have no way of exchanging messages in realtime.
+
+-----------------------------------------------
 All of our use cases have in common that an ongoing peer2peer internet communications session using the SIP protocol needs to set up a DIDComm connection between the same participants, Alice and Bob. 
 
 Alice and Bob are both behind a firewall and other than an internet communications session, have no way of exchanging messages in realtime. 
