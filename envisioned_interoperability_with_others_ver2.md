@@ -30,8 +30,8 @@ Through this component, holders can avoid coercion by verifying the verifier; ve
 ###### 3.2.1. Implementation
 We will look at expanding our API for this.
 
-##### 3.3. Igrantio: data-agreement. 
-On our wishlist since the verify the verifier protocol creates a special set of circumstances where a specialized data agreement is suggested by the use case. Together with Igrantio, we therefore want to investigate whether the two parties agreeing to a mutual exchange of credentials offers room for legal/machine readable formalization.
+##### 3.3. iGrant.io: data-agreement. 
+On our wishlist since the verify the verifier protocol creates a special set of circumstances where a specialized data agreement is suggested by the use case. Together with iGrant.io, we therefore want to investigate whether the two parties agreeing to a mutual exchange of credentials offers room for legal/machine readable formalization.
 
 ###### 3.3.1. Implementation
 We will look at expanding our API for this.
@@ -40,8 +40,8 @@ We will look at expanding our API for this.
 ### 4. Contributions to standards
 
 ##### 4.1 The SIP protocol
-The transport of DIDComm related messages using the SIP protocol creates the need for a standardized message format. We will investigate whether this can and should be added to the standardized Session Initiation Protocol (SIP). To be more specific, we are considering a new SsiComms header for the SsiComms messages as a way of standardising the SIP encapsulation of DIDcomm messages.
+The transport of DIDComm related messages using the SIP protocol creates the need for a standardized message format. We will investigate whether this can and should be added to the standardized Session Initiation Protocol (SIP). To be more specific, we are considering a new SSIComms header for the SSIComms messages as a way of standardising the SIP encapsulation of DIDcomm messages.
 
 
-##### 4.1 DIDCOM messaging 
-DIDCOM messaging currently has no special provisions for a Verify the Verfier exchange between a holder and a verifier. It is usually handled by repeating a holder verifier exchange while switching roles. However, if one strives to minimize the number of on screen messages for the user, and thus the possibility for disruptive human interference, this situation might be improved upon by adding to the library of DIDComm messages. 
+##### 4.1 DIDComm messaging 
+DIDComm messaging currently has no special provisions for a Verify the Verfier exchange between a holder and a verifier. It is usually handled by repeating a holder verifier exchange while switching roles. However, if one strives to minimize the number of on screen messages for the user, and thus the possibility for disruptive human interference, this situation might be improved upon by adding to the library of DIDComm messages. 
