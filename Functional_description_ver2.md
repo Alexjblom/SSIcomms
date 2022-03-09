@@ -6,7 +6,7 @@ The application SSIComms consists of a business module, which makes use of an in
 2. The principle of verify the verifier
 3. Exchange of payment tokens during internet communications sessions
 
-As its SIP mdule, SSIComms uses SYLK Suite and as its SSI module AnimoMobile SDK, a javascript Aries mobile agent. The business module was built on purpose for this project The diagram below illustrates how all of this fits together.
+As its SIP module, SSIComms uses SYLK Suite and as its SSI module AnimoMobile SDK, a javascript Aries mobile agent. The business module was built on purpose for this project The diagram below illustrates how all of this fits together.
 
 ![SSIComms_structure_diagram_ver2](https://user-images.githubusercontent.com/50589812/156152040-dea0e556-24a7-46b6-b836-3aa3f3156a0f.svg)
  
@@ -51,16 +51,55 @@ The special needs of SSIComms where it regards the SSI module are outlined in th
 
 # 5. Use cases
 
-The setting of all of our use cases is the following:
-- Participants are Alice and Bob
-- Alice wants to call Bob by initiating an internet communications session.
-- Alice and Bob are both behind a firewall and other than an internet communications session, have no way of exchanging messages in realtime.
+### Scope and context
 
------------------------------------------------
-All of our use cases have in common that an ongoing peer2peer internet communications session using the SIP protocol needs to set up a DIDComm connection between the same participants, Alice and Bob. 
+Two parties, Alice and Bob, want to execute a transaction, in this case setting up communication online. Both parties may have certain knowledge about the transaction, i.e. the participants and the purpose, and both may have certain conditions for the transaction that need to be met.
+In order to determine what is needed for the specific transactions in the use cases to succeed, we analyze the phases of negotiation, execution and acceptance of the communication session. 
 
-Alice and Bob are both behind a firewall and other than an internet communications session, have no way of exchanging messages in realtime. 
+Within these phases, credentials may be needed, and parties may take on the role of holder, issuer and/or verifier of such credentials. 
 
+The use cases are: 
+
+
+Use Case 1: Alice calls Bob and Bob wonders whether she is really Alice.
+
+|Step  | Phase | Description                      |
+|:---------|:---------|:---------------------------------|
+|1  |Negotiation  | Alice calls Bob|
+|2  |Negotiation| Bob will only accept the call if he is convinced it's Alice calling|
+|3  |Execution	 |Bob asks Alice for a credential|
+|4  |Execution	 |Alice presents a credential|
+|5  |Execution  |Bob examines the credential and approves|
+|6  |Acceptance|Bob accepts the communication session|
+
+
+
+Use Case 2: Alice calls Bob, Bob wonders whether Alice is Alice, and Alice wonders whether Bob is Bob
+
+|Step  | Phase | Description                      |
+|:---------|:---------|:---------------------------------|
+|1  |Negotiation  | Alice calls Bob|
+|2  |Negotiation| Bob will only accept the call if he is convinced it's Alice calling|
+|3  |Negotiation| Alice will only proceed with the call if she is convinced she is calling Bob|
+|4  |Execution	 |Bob asks Alice for a credential|
+|4  |Execution	 |Alice presents a credential|
+|5  |Execution  |Bob examines the credential and approves|
+|6  |Execution  |Alice asks Bob for a credential|
+|7  |Execution  |Bob presents a credential|
+|8  |Execution  |Alice examines the credential and approves|
+|9  |Acceptance|Alice accepts communication session|
+|10 |Acceptance|Bob accepts the communication session|
+
+
+
+
+Use Case 3: Use Case 3: Alice calls Bob, but calling Bob is not free
+Follows the logic of Use Case 1 but adds a condition of payment.
+
+
+The circumstances are:
+Alice and Bob Alice and Bob both have an SSI enabled SIP client, with which they can set up an ongoing peer2peer internet communications session (a call, video call or message)
+Alice and Bob are both behind a firewall and have no other way of exchanging messages in realtime
 For the sake of simplicity, in all cases the proxy servers almost always present in real life situations are not shown here.
 
 ### 5.1. Use Case 1:  Alice calls Bob and Bob wonders whether she is really Alice.
