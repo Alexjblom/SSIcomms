@@ -103,7 +103,7 @@ Follows the logic of Use Case 1 but adds a condition of payment.
 - Alice and Bob are both behind a firewall and have no other way of exchanging messages in realtime
 - For the sake of simplicity, in all cases the proxy servers almost always present in real life situations are not shown here.
 
-### 5.1. Use Case 1:  Alice calls Bob and Bob wonders whether she is really Alice.
+### 2.2. Use Case 1:  Alice calls Bob and Bob wonders whether she is really Alice.
 
 The following diagram shows how we expect to make _identification during an internet communications session_ happen for Alice and Bob. Please note that DIDComm by itself, where a session is usually initiated by reading a QR-code, does not fit the circumstances. 
 
@@ -115,35 +115,35 @@ In case of Bob not receiving the first invite on an SSI capable SIP client, he u
 ![SSI_SIP complex diagram drawio(2)](https://user-images.githubusercontent.com/50589812/157230190-de11afc5-746a-4ff8-9fce-76242d25b668.svg)
 
 
-### 5.2. Use Case 2: Alice calls Bob, Bob wonders whether Alice is Alice, and Alice wonders whether Bob is Bob
+### 2.3. Use Case 2: Alice calls Bob, Bob wonders whether Alice is Alice, and Alice wonders whether Bob is Bob
 
 ![SSI_SIP_VTV_flowdiagram drawio(1)](https://user-images.githubusercontent.com/50589812/156942760-a1ba17fb-5170-4f7a-982b-e039a5e232ee.svg)
 
 In this scenario, better known as _verify the verifier_, Alice and Bob take the role of holder and verifier respectively, and then the role of verifier and holder. The exchange of VC’s twice can of course be achieved by using existing DIDComm messages, but that has its drawbacks: not only does the holder have to respond to multiple on screen messages, which does not make for a great user experience, it also misses the opportunity to offload the decision making to the machine layer. Involving more human decision making creates additional risk of the agreed exchange going wrong.
 
 
-### 5.3. Use Case 3: Alice calls Bob, but calling Bob is not free.
+### 2.4. Use Case 3: Alice calls Bob, but calling Bob is not free.
 The third use case concerns the decentralized equivalent of premium rate numbers. Benefitting from their embedded digital wallets, Alice and Bob can identify and pay each other directly using a payment token. 
 This use case falls under the category of nice to have, since in spite of its practical relevance, it is only indirectly connected to the subject of this project.
 
 
-# 6. Security
+# 3. Security
 
-### 6.1. SIP
-#### 6.1.1. SIP messages
+### 3.1. SIP
+#### 3.1.1. SIP messages
 Concerns about the security of calls via the public Internet have been addressed by encryption of the SIP protocol for secure transmission. The URI scheme SIPS is used to mandate that SIP communication be secured with Transport Layer Security (TLS). SIPS URIs take the form sips:user@example.com.
 End-to-end encryption of SIP is only possible if there is a direct connection between communication endpoints. While a direct connection can be made via Peer-to-peer SIP or via a VPN between the endpoints, most SIP communication involves multiple hops, with the first hop being from a user agent to the user agent's ITSP. For the multiple-hop case, SIPS will only secure the first hop; the remaining hops will normally not be secured with TLS and the SIP communication will be insecure. In contrast, the HTTPS protocol provides end-to-end security as it is done with a direct connection and does not involve the notion of hops.
-#### 6.1.2. SIP text messages
+#### 3.1.2. SIP text messages
 SIP text messages are encrypted using the OpenPGP standard.
 
-#### 6.1.3. RTP stream
+#### 3.1.3. RTP stream
 The media streams (audio and video), which are separate connections from the SIPS signaling stream, may be encrypted using SRTP. The key exchange for SRTP is performed with SDES (RFC 4568), or with ZRTP (RFC 6189). When SDES is used, the keys will be transmitted via insecure SIP unless SIPS is used. One may also add a MIKEY (RFC 3830) exchange to SIP to determine session keys for use with SRTP.
 
-### 6.2. DIDComm
-#### 6.2.1. Out-of-band messages
+### 3.2. DIDComm
+#### 3.2.1. Out-of-band messages
 Out-of-band messages are traditionally not encrypted, because DIDComm does not do so. However, in this case they are, because they are carried as SIP text mesages. See above to find out how SIP messages are encrypted.
 
-#### 6.2.2. DIDComm messages
+#### 3.2.2. DIDComm messages
 In DIDComm v1, the security is loosely based on standard JSON Web encryption. DIDComm v2 uses full JOSE standards (JWM, EDHC-1PU, etc) 
 
 
