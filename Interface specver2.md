@@ -26,19 +26,19 @@ This function sends out an invite for a SIP session which will be used for regul
 This function acknowledges the existence of SSI-capabilities
 
 #### 2.3. Complete the SIP-SSI session for session initiators
-This function 
-- creates an out-of-band-message
-- encrypts it
-- sends it as a SIP text message, using the active SIP connection
+This function
+- decrypts a SIP text message containing the out-of-band-message
 - completes setting up the DIDComm connection
 - answers a proof request with a proof presentation
 
 #### 2.4. Complete the SIP-SSI session for session responders
 This function 
-- decrypts incoming out-of-band-messages 
-- answers incoming out-of-band-messages with a connection-request and completes setting up the DIDComm connection
+- creates an out-of-band-message and encrypts it
+- sends it as a SIP text message, using the active SIP connection
+- completes setting up the DIDComm connection
 - sends a proof request for default credentials and verifies and displays the credentials that it receives
 - Unblocks the media stream in case of a satisfactory credential exchange.
+
 
 #### 2.5. Future work: request credentials
 Request the default credentials from the other party. To be used by Alice when during the session, she decides she needs more assurance from Bob.
