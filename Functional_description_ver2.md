@@ -97,7 +97,7 @@ Use Case 3: Use Case 3: Alice calls Bob, but calling Bob is not free
 Follows the logic of Use Case 1 but adds a condition of payment.
 
 
-The circumstances are:
+The context is:
 - Alice and Bob Alice and Bob both have an SSI enabled SIP client, with which they can set up an ongoing peer2peer internet communications session (a call, video call or message)
 - Alice and Bob are both behind a firewall and have no other way of exchanging messages in realtime
 - For the sake of simplicity, in all cases the proxy servers almost always present in real life situations are not shown here.
