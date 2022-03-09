@@ -1,6 +1,6 @@
 # Functional specification
 
-## 1. Context
+## 1. Application structure
 The application SSIComms consists of a business module, which makes use of an integrated SIP module and SSI module. The SIP module provides the different SIP communication utilities, the SSI module provides the DIDComm and wallet functionalities. Together, they constitute an application that satisfies use cases such as:
 1. Identification before and during an internet communications session
 2. The principle of verify the verifier
