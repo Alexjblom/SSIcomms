@@ -1,6 +1,7 @@
 # Functional specification
 
 ## 1. Application structure
+### 1.1 General
 The application SSIComms consists of a business module, which makes use of an integrated SIP module and SSI module. The SIP module provides the different SIP communication utilities, the SSI module provides the DIDComm and wallet functionalities. Together, they constitute an application that satisfies use cases such as:
 1. Identification before and during an internet communications session
 2. The principle of verify the verifier
@@ -10,13 +11,13 @@ As its SIP module, SSIComms uses SYLK Suite and as its SSI module AnimoMobile SD
 
 ![SSIComms_structure_diagram_ver2](https://user-images.githubusercontent.com/50589812/156152040-dea0e556-24a7-46b6-b836-3aa3f3156a0f.svg)
  
-## 2. Business module
+## 1.2. Business module
 This module contains
 - the business logic
 - a SIP client capable of transporting DIDComm messages.
 - the ability to display messages on screen
  
-## 2. SIP module
+## 1.3. SIP module
 This module is based on SYLK Suite and supports:
 - SIP Signaling
 - Voice Over IP
@@ -25,7 +26,7 @@ This module is based on SYLK Suite and supports:
 - Gateway
 - Web conferencing
  
-# 4. SSI module
+## 1.4. SSI module
 
 This module supports the following features:
 - TypeScript native framework, built for cross-platform mobile development on iOS & Android
@@ -49,10 +50,10 @@ This module supports the following features:
 A detailed overview of which Aries features, agent types, protocols and AIP versions the mobile SDK will support see the Aries Mobile SDK - Aries Feature Overview document.
 The special needs of SSIComms where it regards the SSI module are outlined in the use cases below.
 
-# 5. Use cases
+# 2. Use cases
 
-### Scope and context
-
+## 2.1. Scope and context
+### 2.1.1. Scope
 Two parties, Alice and Bob, want to execute a transaction, in this case setting up communication online. Both parties may have certain knowledge about the transaction, i.e. the participants and the purpose, and both may have certain conditions for the transaction that need to be met.
 In order to determine what is needed for the specific transactions in the use cases to succeed, we analyze the phases of negotiation, execution and acceptance of the communication session. 
 
@@ -96,7 +97,7 @@ Use Case 2: Alice calls Bob, Bob wonders whether Alice is Alice, and Alice wonde
 Use Case 3: Use Case 3: Alice calls Bob, but calling Bob is not free
 Follows the logic of Use Case 1 but adds a condition of payment.
 
-
+### 2.1.2. Context
 The context is:
 - Alice and Bob Alice and Bob both have an SSI enabled SIP client, with which they can set up an ongoing peer2peer internet communications session (a call, video call or message)
 - Alice and Bob are both behind a firewall and have no other way of exchanging messages in realtime
