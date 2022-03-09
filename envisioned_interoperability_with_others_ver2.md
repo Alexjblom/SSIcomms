@@ -30,7 +30,8 @@ We will look at expanding our library of interface functions for this.
 ### 4. Contributions to standards
 
 ##### 4.1 The SIP protocol
-The transport of DIDComm related messages using the SIP protocol creates the need for a standardized message format. We will investigate whether this can and should be added to the standardized Session Initiation Protocol (SIP). To be more specific, we are considering a new SSIComms header for the SSIComms messages as a way of standardising the SIP encapsulation of DIDcomm messages.
+The transport of DIDComm related messages using the SIP protocol creates the need for a standardized message format. We will investigate whether this can and should be added to the standardized Session Initiation Protocol (SIP). To be more specific, we are considering a new SSIComms header for the SSIComms messages as a way of standardising the SIP encapsulation of DIDcomm messages. 
+We will also investigate whether the invite to a SIP-SSI session warrants a new type of invite, to be added to the standards.
 
 
 ##### 4.1 DIDComm messaging 
